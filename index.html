@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="no-cam">
+        <h4>You are being watched</h4>
+        <img
+          class="doll"
+          src="https://media0.giphy.com/media/Yv3KyTq8qjK8GWcs2A/giphy.webp?cid=ecf05e47gj46ehalyr1x4vdrwujfnwd9liwmk5e4je4gmvow&rid=giphy.webp&ct=s"
+          alt="doll-watching"
+        />
+      </div>
+      <div class="cam">
+        <video id="video" width="320" height="240" playsinline autoplay></video>
+      </div>
+      <div id="record"></div>
+      <button onclick="capture()" id="bbtn">Capture</button>
+      <button onclick="stopCamera()" id="btn">Stop Watching Me</button>
+    </div>
+
+    <script src="./extra.js"></script>
+  </body>
+</html>
